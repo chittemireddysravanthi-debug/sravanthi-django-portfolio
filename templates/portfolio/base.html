@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sravanthi Chittemreddy - Python Full Stack and AI/ML developer portfolio">
+  <title>{% block title %}Sravanthi | Developer Portfolio{% endblock %}</title>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script defer src="{% static 'js/main.js' %}"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="#home">Sravanthi<span>.</span></a>
+
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="main-navigation"
+        aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+{% if messages %}<div class="messages">{% for message in messages %}<p>{{ message }}</p>{% endfor %}</div>{% endif %}
+{% block content %}{% endblock %}
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <a href="#home" class="footer-logo">Sravanthi<span>.</span></a>
+
+        <p>Building web applications and exploring AI-powered solutions.</p>
+
+        <div class="footer-socials">
+            <a href="https://github.com/chittemireddysravanthi-debug"
+               target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/sravanthi-chittemreddy-93a1b4319/"
+               target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chittemreddysravanthi@gmail.com"
+               target="_blank" rel="noopener noreferrer" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+        <a href="#home" class="back-to-top">
+            Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Sravanthi Chittemreddy. All Rights Reserved.</p>
+        <p>Designed & Developed with Python and Django.</p>
+    </div>
+</footer>
+</body></html>

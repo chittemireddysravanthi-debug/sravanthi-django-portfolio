@@ -1,0 +1,329 @@
+
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- HOME SECTION -->
+<section class="section hero-section" id="home">
+
+    <div class="hero-content reveal">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm <span>Sravanthi</span></h1>
+
+        <h2>
+    I'm a <span id="typing-text"></span>
+    <span class="typing-cursor">|</span>
+          </h2>
+
+        <p>
+            I'm a B.Tech Computer Science graduate specializing in
+            Artificial Intelligence. I enjoy building web applications
+            and exploring AI and Machine Learning technologies.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">Explore My Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="hero-image reveal">
+        <img src="{% static 'images/Photo Sravanthi.png' %}"
+         alt="Sravanthi - Python and AI/ML Developer">
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+    <div class="section-heading reveal">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+    </div>
+
+    <div class="about-layout reveal">
+        <div class="about-text">
+            <h3>I'm Sravanthi Chittemreddy</h3>
+            <h4>Python Full Stack & AI/ML Developer</h4>
+
+            <p>
+                I am a B.Tech Computer Science graduate specializing in
+                Artificial Intelligence. I enjoy developing web applications
+                and exploring AI-powered solutions.
+            </p>
+
+            <p>
+                I have hands-on experience with Python, Django, React,
+                SQL and machine learning concepts. I am eager to learn
+                new technologies and contribute to real-world projects.
+            </p>
+        </div>
+
+        <div class="about-details">
+            <div class="detail-item">
+                <span>Education</span>
+                <strong>B.Tech CSE - AI</strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Graduation</span>
+                <strong>2026</strong>
+            </div>
+
+            <div class="detail-item">
+                <span>CGPA</span>
+                <strong>8.19</strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Location</span>
+                <strong>Bangalore, India</strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Primary Skills</span>
+                <strong>Python, Django, SQL, AIML, HTML, CSS, JavaScript, React, MySQL</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS SECTION -->
+<section class="section skills-section" id="skills">
+    <div class="section-heading reveal">
+        <p class="eyebrow">MY TECHNICAL EXPERTISE</p>
+        <h2>My <span>Skills</span></h2>
+    </div>
+
+    
+<div class="skills-grid reveal">
+
+    <div class="skill-card">
+        <i class="fa-brands fa-python skill-icon"></i>
+        <h3>Python</h3>
+        <p>Programming, OOP, Functions, Problem Solving</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="fa-brands fa-html5 skill-icon"></i>
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="fa-solid fa-code skill-icon"></i>
+        <h3>Backend</h3>
+        <p>Python, Django</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="fa-solid fa-database skill-icon"></i>
+        <h3>Database</h3>
+        <p>SQL, MySQL, SQLite</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="fa-solid fa-brain skill-icon"></i>
+        <h3>AI & Machine Learning</h3>
+        <p>Deep Learning, Generative AI, NLP, Data Preprocessing</p>
+    </div>
+
+    <div class="skill-card">
+        <i class="fa-brands fa-github skill-icon"></i>
+        <h3>Tools</h3>
+        <p>Git, GitHub, VS Code</p>
+    </div>
+
+</div>
+
+
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section services-section" id="services">
+    <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I CAN DO</p>
+        <h2>My <span>Services</span></h2>
+    </div>
+
+    
+<div class="services-grid reveal">
+
+    <div class="service-card">
+        <i class="fa-brands fa-python service-icon"></i>
+        <h3>Python Development</h3>
+        <p>
+            Building Python applications using programming
+            fundamentals, OOP and problem-solving techniques.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <i class="fa-solid fa-laptop-code service-icon"></i>
+        <h3>Full Stack Development</h3>
+        <p>
+            Creating responsive web applications using
+            HTML, CSS, JavaScript, React and Django.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <i class="fa-solid fa-brain service-icon"></i>
+        <h3>AI & Machine Learning</h3>
+        <p>
+            Exploring machine learning, deep learning,
+            generative AI and intelligent applications.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section class="section projects-section" id="projects">
+    <div class="section-heading reveal">
+        <p class="eyebrow">MY RECENT WORK</p>
+        <h2>Featured <span>Projects</span></h2>
+    </div>
+
+    <div class="projects-grid reveal">
+
+        <div class="project-card">
+            <h3>Parkinson's Disease Detection</h3>
+            <p>
+                A medical imaging research project using
+                diffusion-based generative models, ResNet18
+                and XGBoost to explore Parkinson's disease biomarkers.
+            </p>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Deep Learning</span>
+                <span>AI/ML</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Interview Preparation Tracker</h3>
+            <p>
+                A web application to organize interview questions,
+                practice sessions and mock interviews with
+                database integration.
+            </p>
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>MySQL</span>
+            </div>
+
+            <a class="project-link"
+               href="https://github.com/chittemireddysravanthi-debug/Interview_Preparation_Tracker"
+               target="_blank"
+               rel="noopener noreferrer">
+                View on GitHub →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section resume-section" id="resume">
+  <div class="resume-panel reveal">
+
+    <div class="resume-info">
+      <p class="eyebrow">GET TO KNOW MY PROFILE</p>
+      <h2>My <span>Resume.</span></h2>
+      <p>
+        Explore my education, technical skills, internships
+        and projects in my professional resume.
+      </p>
+
+      <a class="btn primary"
+         href="{% static 'resume/resume.pdf' %}"
+         download="Sravanthi_Resume.pdf">
+        Download Resume
+      </a>
+    </div>
+
+    <div class="resume-animation">
+      <div class="resume-glow"></div>
+      <div class="resume-card">
+        <div class="resume-top">
+          <span>MY RESUME</span>
+          <span class="pdf-label">PDF</span>
+        </div>
+
+        <div class="resume-preview">
+          <h3>CHITTEMREDDY SRAVANTHI</h3>
+          <p>PYTHON DEVELOPER | FULL STACK | AI/ML</p>
+          <hr>
+          <h4>PROFESSIONAL SUMMARY</h4>
+          <div class="resume-line"></div>
+          <div class="resume-line short"></div>
+          <h4>TECHNICAL SKILLS</h4>
+          <div class="resume-tags">
+            <span>Python</span>
+            <span>Django</span>
+            <span>SQL</span>
+            <span>AI/ML</span>
+          </div>
+          <h4>PROJECTS</h4>
+          <div class="resume-line"></div>
+          <div class="resume-line short"></div>
+          <div class="resume-footer">2026 • PROFESSIONAL PROFILE</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section" id="contact">
+    <div class="section-heading reveal">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact <span>Me</span></h2>
+        <p>Have an opportunity or a project in mind? Feel free to connect with me.</p>
+    </div>
+
+    <div class="contact-content reveal">
+
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <h3>Email</h3>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chittemreddysravanthi@gmail.com"
+               target="_blank" rel="noopener noreferrer">
+                chittemireddysravanthi@gmail.com
+             </a>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-github contact-icon"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/chittemireddysravanthi-debug"
+               target="_blank" rel="noopener noreferrer">
+                View GitHub Profile
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin contact-icon"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/sravanthi-chittemreddy-93a1b4319/"
+               target="_blank" rel="noopener noreferrer">
+                Connect on LinkedIn
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
